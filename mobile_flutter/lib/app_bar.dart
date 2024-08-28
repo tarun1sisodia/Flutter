@@ -10,7 +10,7 @@ const Appbar({ super.key });
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Notes"),
+          title: Text("Notes",style: TextStyle(fontSize: 30),),
           centerTitle: true,
         ),
       ),
