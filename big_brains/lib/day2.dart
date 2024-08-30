@@ -9,7 +9,7 @@ class Day2 extends StatelessWidget
   {
     return Container(
       child: Center(
-        child: Text("Hello Studio"),
+        child: Text("Hello Tarun"),
       )
     );
 
