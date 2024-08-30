@@ -4,7 +4,8 @@ class Day1 extends StatelessWidget
 {
   const Day1({ super.key });
 
-  @override
+
+  @override              
 /// Builds the UI for the Day1 screen, which displays an app bar with a title, menu icon, search icon, and file copy icon, and a body that displays the text "Hello Studio" centered.
     Widget build(BuildContext context)
   {
