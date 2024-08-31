@@ -11,7 +11,7 @@ const ScaffolD({ Key? key }) : super(key: key);
         backgroundColor: Colors.purple,
         centerTitle: true,
       ),
-      body: Text("Body Section",style: TextStyle(fontSize: 20,color: Colors.amber),),
+      body: Center(child: Text("Body Section",style: TextStyle(fontSize: 20,color: Colors.amber),)),
       backgroundColor: Colors.teal,
     );
   }
