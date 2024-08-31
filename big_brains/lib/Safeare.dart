@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Safeare extends StatelessWidget 
-{
-  const Safeare({ super.key });
+class Safeare extends StatelessWidget {
+  const Safeare({super.key});
 
   @override
-  Widget build(BuildContext context)
-  {
+  Widget build(BuildContext context) {
     return SafeArea(
-      child: Text("SafeArea"),
+      child: Center(
+        child: const Text("SafeArea"),
+      ),
     );
   }
 }
