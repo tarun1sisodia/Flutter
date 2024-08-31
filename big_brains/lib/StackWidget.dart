@@ -11,6 +11,7 @@ const StackWidget({ super.key });
         backgroundColor: Colors.black,
       ),
       body: Stack(
+        //Stack is a Widget used to plot one on another
         children: [
           Center(
             child: Container(
