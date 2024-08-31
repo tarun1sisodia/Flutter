@@ -7,6 +7,7 @@ import 'material.dart';
 import 'day0.dart';
 import 'column.dart';
 import 'raw.dart';
+import 'StackWidget.dart';
 
 void main() {
   runApp(const MainApp());
@@ -18,7 +19,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Raw(),
+      home: StackWidget(),
       debugShowCheckedModeBanner: false,
     );
   }
