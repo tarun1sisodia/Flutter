@@ -7,7 +7,7 @@ const ScaffolD({ Key? key }) : super(key: key);
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("App Bar Scaffold Widget",style: TextStyle(color: Colors.deepOrange),),
+        title: Text("App Bar Scaffold Widget",style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255,)),),
         backgroundColor: Colors.purple,
         centerTitle: true,
       ),
