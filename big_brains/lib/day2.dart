@@ -8,8 +8,9 @@ class Day2 extends StatelessWidget
   Widget build(BuildContext context)
   {
     return Container(
+      color: Colors.amberAccent,
       child: Center(
-        child: Text("Hello Tarun"),
+        child: Text("Hello Tarun",style: TextStyle(color: Colors.blue),),
       )
     );
 
