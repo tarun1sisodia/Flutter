@@ -5,6 +5,7 @@ import 'day1.dart';
 import 'day2.dart';
 import 'material.dart';
 import 'day0.dart';
+import 'column.dart';
 
 void main() {
   runApp(const MainApp());
@@ -16,7 +17,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Day0(),
+      home: column(),
       debugShowCheckedModeBanner: false,
     );
   }
