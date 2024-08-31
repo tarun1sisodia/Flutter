@@ -20,16 +20,19 @@ class Raw extends StatelessWidget
             height: 50,
             width: 100,
             color: Colors.amber,
+            child: Center(child: Text("Raw",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
           Container(
             height: 60,
             width: 120,
-            color:Colors.amber[300]
+            color:Colors.amber[300],
+            child: Center(child: Text("Raw ",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
           Container(
             height: 50,
             width: 100,
             color: Colors.amber,
+            child: Center(child: Text("Raw",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
         ],
       ),
