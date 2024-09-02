@@ -10,9 +10,10 @@ import 'raw.dart';
 import 'StackWidget.dart';
 import 'text_widget.dart';
 import 'btn.dart';
-*/
-import 'package:flutter/material.dart';
 import 'inputbox.dart';
+*/
+import 'ImageDay9.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MainApp());
@@ -24,7 +25,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: Inputbox(),
+      home: ImageDay9(),
       debugShowCheckedModeBanner: false,
     );
   }
