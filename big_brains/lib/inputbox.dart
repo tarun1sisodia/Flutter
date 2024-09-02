@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Inputbox extends StatelessWidget {
+class Inputbox extends StatefulWidget {
   Inputbox({super.key});
 
+  @override
+  State<Inputbox> createState() => _InputboxState();
+}
+
+class _InputboxState extends State<Inputbox> {
   TextEditingController _controller = TextEditingController();
 
   @override
