@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AdvanceContainer extends StatefulWidget 
 {
-  const AdvanceContainer({super.key});
+  AdvanceContainer({super.key});
 
   @override
   _AdvanceContainerState createState() => _AdvanceContainerState();
@@ -12,12 +13,18 @@ class _AdvanceContainerState extends State<AdvanceContainer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+              
       //App Bar Start
       appBar: AppBar(
-        title: Text("Avengers: Age of Ultron"),
+        title: Text("Android Studio Presents"),
         //Center The Title.
         centerTitle: true,
+        elevation: 0,
+        actions: [
+          IconButton(onPressed: (){}, icon: FaIcon(FontAwesomeIcons.ubuntu,color: const Color.fromARGB(255, 255, 17, 0),)),
+
+
+        ],
         //Background Color For App Bar
         backgroundColor: Colors.amber,
       ),
@@ -26,7 +33,7 @@ class _AdvanceContainerState extends State<AdvanceContainer> {
       body: Container(
 
         //Background Color on whole body.
-        color: Colors.black,
+        color: Colors.white,
         //child Section starts
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -41,18 +48,22 @@ class _AdvanceContainerState extends State<AdvanceContainer> {
                   width: 150,
                   //Text Starts for 1st Container.
                   child: Center(
-                      child: Text(
-                    'Google',
-                    style: TextStyle(
+
+                      child: Text( 'Google',
+                        style: TextStyle(
+                      
                         fontSize: 20,
                         fontFamily: 'Times New Roman',
-                        color: const Color.fromARGB(255, 133, 5, 5)),
+                        color: const Color.fromARGB(255, 0, 78, 172)),
+
                   )),
 
                   //New Concept of decoration.
                   decoration: BoxDecoration(
+
                     //Set background Color for whole box , container etc.
                     color: const Color.fromARGB(255, 0, 255, 251),
+
                     //Border Radius to Cut the edges in curve 
                     borderRadius: BorderRadius.circular(20),
 
@@ -67,6 +78,7 @@ class _AdvanceContainerState extends State<AdvanceContainer> {
 
             //2nd Container 
             Container(
+
               //Height & Width
               height: 60,
               width: 60,
@@ -84,6 +96,18 @@ class _AdvanceContainerState extends State<AdvanceContainer> {
                 image: DecorationImage(image: AssetImage("assets/googlelogo.png")),
                 //Color inside the Circle
                 color: const Color.fromARGB(255, 255, 0, 0),
+
+                boxShadow: [
+                  BoxShadow(
+
+                    color: const Color.fromARGB(255, 212, 120, 120),
+                    blurRadius: 15,
+                    spreadRadius: 3,
+                    offset: Offset(4,4),
+                    // blurStyle: BlurStyle.normal
+
+                  )
+                ]
               ),
             ),
           ],
