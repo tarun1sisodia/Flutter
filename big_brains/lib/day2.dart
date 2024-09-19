@@ -9,7 +9,7 @@ class Day2 extends StatelessWidget
   {
     return Container(
       color: Colors.amberAccent,
-      child: Center(
+      child: const Center(
         child: Text("Hello Tarun",style: TextStyle(color: Colors.blue),),
       )
     );

@@ -10,7 +10,7 @@ class Day0 extends StatelessWidget
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Welcome back!"),
+          title: const Text("Welcome back!"),
           centerTitle: true,
           backgroundColor: Colors.amber,
         ),
@@ -18,7 +18,7 @@ class Day0 extends StatelessWidget
           height:50,
           width: 100,
           color: Colors.cyanAccent,
-          child: Center(child: Text("Box")),
+          child: const Center(child: Text("Box")),
         ),
 
       ),

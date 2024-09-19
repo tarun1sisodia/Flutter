@@ -16,7 +16,6 @@ import 'package:big_brains/Advance_Container.dart';
 import 'package:big_brains/Advance_Button.dart';
 */
 import 'package:big_brains/Ticket.dart';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,7 +27,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return  const MaterialApp(
       home: Ticket(),
       debugShowCheckedModeBanner: false,
     );

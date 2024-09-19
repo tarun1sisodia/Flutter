@@ -9,7 +9,7 @@ const column({ super.key });
   {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Column Widget',style: TextStyle(color: Colors.white),),
+        title: const Text('Column Widget',style: TextStyle(color: Colors.white),),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
@@ -19,47 +19,47 @@ const column({ super.key });
             height: 50,
             width: 100,
             color: Colors.amber,
-            child: Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
+            child: const Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
           Container(
             height: 60,
             width: 120,
             color:Colors.amber[300],
-            child: Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
+            child: const Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
           Container(
             height: 50,
             width: 100,
             color: Colors.amber,
-            child: Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
+            child: const Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
           Container(
             height: 60,
             width: 120,
             color:Colors.amber[300],
-            child: Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
+            child: const Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
           Container(
             height: 50,
             width: 100,
             color: Colors.amber,
-            child: Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
+            child: const Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
           Container(
             height: 60,
             width: 120,
             color:Colors.amber[300],
-            child: Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
+            child: const Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
           Container(
             height: 50,
             width: 100,
             color: Colors.amber,
-            child: Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
+            child: const Center(child: Text("Col",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.blue),),),
           ),
           
           
-          Text('Column Wise\n\t\t\tArrange',style: TextStyle(fontSize: 15,color: Colors.blue),),
+          const Text('Column Wise\n\t\t\tArrange',style: TextStyle(fontSize: 15,color: Colors.blue),),
         ],
       ),
     );

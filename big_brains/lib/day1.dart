@@ -12,12 +12,12 @@ class Day1 extends StatelessWidget
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Android Studio"),
+          title: const Text("Android Studio"),
           centerTitle:true,
           backgroundColor: Colors.amber,
-          leading: Icon(Icons.menu,color: const Color.fromARGB(255, 136, 26, 200)),
+          leading: const Icon(Icons.menu,color: Color.fromARGB(255, 136, 26, 200)),
           elevation: 0,
-          actions: [
+          actions: const [
             Icon(Icons.search_rounded,color: Color.fromARGB(255, 136, 26, 200),),
             Padding(padding: EdgeInsets.only(left:10)),
             Icon(Icons.file_copy_outlined,color:Color.fromARGB(255,136,26,200)),
@@ -25,7 +25,7 @@ class Day1 extends StatelessWidget
           ],
         ),
         body: Container(
-          child: Center(child: Text("Hello Studio")),
+          child: const Center(child: Text("Hello Studio")),
         ),
       ),
     );

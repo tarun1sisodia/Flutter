@@ -9,7 +9,7 @@ const ImageDay9({ super.key });
   {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Import Image From File/Url"),
+        title: const Text("Import Image From File/Url"),
         centerTitle: true,
         backgroundColor: Colors.amber
       ),

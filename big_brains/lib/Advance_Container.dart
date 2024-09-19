@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AdvanceContainer extends StatefulWidget 
 {
-  AdvanceContainer({super.key});
+  const AdvanceContainer({super.key});
 
   @override
   _AdvanceContainerState createState() => _AdvanceContainerState();
@@ -16,12 +16,12 @@ class _AdvanceContainerState extends State<AdvanceContainer> {
               
       //App Bar Start
       appBar: AppBar(
-        title: Text("Android Studio Presents"),
+        title: const Text("Android Studio Presents"),
         //Center The Title.
         centerTitle: true,
         elevation: 0,
         actions: [
-          IconButton(onPressed: (){}, icon: FaIcon(FontAwesomeIcons.ubuntu,color: const Color.fromARGB(255, 255, 17, 0),)),
+          IconButton(onPressed: (){}, icon: const FaIcon(FontAwesomeIcons.ubuntu,color: Color.fromARGB(255, 255, 17, 0),)),
 
 
         ],
@@ -46,17 +46,6 @@ class _AdvanceContainerState extends State<AdvanceContainer> {
                   //height & Width
                   height: 100,
                   width: 150,
-                  //Text Starts for 1st Container.
-                  child: Center(
-
-                      child: Text( 'Google',
-                        style: TextStyle(
-                      
-                        fontSize: 20,
-                        fontFamily: 'Times New Roman',
-                        color: const Color.fromARGB(255, 0, 78, 172)),
-
-                  )),
 
                   //New Concept of decoration.
                   decoration: BoxDecoration(
@@ -72,6 +61,17 @@ class _AdvanceContainerState extends State<AdvanceContainer> {
                         color: const Color.fromARGB(255, 14, 134, 185),
                         width: 5),
                   ),
+                  //Text Starts for 1st Container.
+                  child: const Center(
+
+                      child: Text( 'Google',
+                        style: TextStyle(
+                      
+                        fontSize: 20,
+                        fontFamily: 'Times New Roman',
+                        color: Color.fromARGB(255, 0, 78, 172)),
+
+                  )),
                 ),
               ],
             ),
@@ -93,14 +93,14 @@ class _AdvanceContainerState extends State<AdvanceContainer> {
                 shape: BoxShape.circle,
 
                 //Image Adde Using DecorationImage
-                image: DecorationImage(image: AssetImage("assets/googlelogo.png")),
+                image: const DecorationImage(image: AssetImage("assets/googlelogo.png")),
                 //Color inside the Circle
                 color: const Color.fromARGB(255, 255, 0, 0),
 
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
 
-                    color: const Color.fromARGB(255, 212, 120, 120),
+                    color: Color.fromARGB(255, 212, 120, 120),
                     blurRadius: 15,
                     spreadRadius: 3,
                     offset: Offset(4,4),

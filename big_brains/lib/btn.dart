@@ -39,17 +39,17 @@ class _BtnState extends State<Btn>
   Widget build(BuildContext context) 
   {
     return Scaffold(
-      appBar: AppBar(title: Text("Deadpool X Wolvrine",style: TextStyle(color: Colors.yellow),),
+      appBar: AppBar(title: const Text("Deadpool X Wolvrine",style: TextStyle(color: Colors.yellow),),
       centerTitle: true,
       backgroundColor: Colors.red,
-      leading: FaIcon(FontAwesomeIcons.gun,color: Colors.white,),
+      leading: const FaIcon(FontAwesomeIcons.gun,color: Colors.white,),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(child: const Text("Buy Ticket",style: TextStyle(fontSize: 30,color: Color.fromARGB(255, 206, 196, 46),fontWeight:FontWeight.bold,backgroundColor: Color.fromARGB(255, 255, 0, 136)),),),
-          SizedBox(height: 50,),
-          Text(count.toString(),style:TextStyle(fontSize:20,fontWeight: FontWeight.bold)),
+          const Center(child: Text("Buy Ticket",style: TextStyle(fontSize: 30,color: Color.fromARGB(255, 206, 196, 46),fontWeight:FontWeight.bold,backgroundColor: Color.fromARGB(255, 255, 0, 136)),),),
+          const SizedBox(height: 50,),
+          Text(count.toString(),style:const TextStyle(fontSize:20,fontWeight: FontWeight.bold)),
           Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton(onPressed: increament, child: const Text("Tap")),

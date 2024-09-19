@@ -7,7 +7,7 @@ const StackWidget({ super.key });
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("Stack Widget",style:TextStyle(color: Colors.amber)),
+        title: const Text("Stack Widget",style:TextStyle(color: Colors.amber)),
         backgroundColor: Colors.black,
       ),
       body: Stack(
@@ -20,13 +20,13 @@ const StackWidget({ super.key });
               color:Colors.green,
             ),
           ),
-          Center(child: Text("Center Container")),
+          const Center(child: Text("Center Container")),
           Container(
               height: 30,
               width:120,
               color:Colors.green,
             ),
-          Text("Default Container")
+          const Text("Default Container")
         ],
       ),
     );

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AdvanceButton extends StatefulWidget {
-  AdvanceButton({super.key});
+  const AdvanceButton({super.key});
 
   @override
   State<AdvanceButton> createState() => _AdvanceButtonState();
@@ -16,7 +16,7 @@ class _AdvanceButtonState extends State<AdvanceButton> {
       //App Bar Starts
       appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text("Android Studio Presents",
+          title: const Text("Android Studio Presents",
               style:
                   TextStyle(color: Colors.pink, fontFamily: 'Times new roman')),
           //Center The Title.
@@ -27,7 +27,7 @@ class _AdvanceButtonState extends State<AdvanceButton> {
           actions: [
             IconButton(
                 onPressed: () {},
-                icon: FaIcon(
+                icon: const FaIcon(
                       FontAwesomeIcons.amazon,
                       size: 30,
                       color: Colors.amber,
@@ -45,45 +45,45 @@ class _AdvanceButtonState extends State<AdvanceButton> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                        onPressed: (){}, 
-                        child: Text(
-                          "Elevated", 
-                           style: TextStyle(fontSize: 16,fontFamily: 'Times new roman')
-                        ),
+                        onPressed: (){},
 
-                    style:ButtonStyle(
+                    style:const ButtonStyle(
                       padding:WidgetStatePropertyAll(EdgeInsets.all(8.0)),
                       elevation: WidgetStatePropertyAll(10),
-                      backgroundColor: WidgetStatePropertyAll(const Color.fromARGB(255, 0, 102, 255)),
-                      foregroundColor: WidgetStatePropertyAll(const Color.fromARGB(255, 255, 255, 255)),
+                      backgroundColor: WidgetStatePropertyAll(Color.fromARGB(255, 0, 102, 255)),
+                      foregroundColor: WidgetStatePropertyAll(Color.fromARGB(255, 255, 255, 255)),
                       animationDuration: Duration(
                         seconds: 5
                       ),
                       fixedSize: WidgetStatePropertyAll(Size(100.0,50.0)),
-                      )
+                      ), 
+                        child: const Text(
+                          "Elevated", 
+                           style: TextStyle(fontSize: 16,fontFamily: 'Times new roman')
+                        )
                     ),
                           //ElevatedButton Ends 
-                          SizedBox(height: 50),
+                          const SizedBox(height: 50),
                           //Gap b/w Both Button
 
                 Directionality(
                   textDirection: TextDirection.rtl, 
                   child: ElevatedButton.icon(
                               onPressed: (){}, 
-                              label: Text("Amazon",
+                              label: const Text("Amazon",
                               style: TextStyle(
                                 fontSize: 15,
-                                color: const Color.fromARGB(255, 71, 3, 189),
+                                color: Color.fromARGB(255, 71, 3, 189),
                                 fontFamily: 'Times new roman',
                                 fontWeight: FontWeight.bold
                                 )
                                 ),
-                              icon: FaIcon(FontAwesomeIcons.amazonPay,color: Colors.black),
+                              icon: const FaIcon(FontAwesomeIcons.amazonPay,color: Colors.black),
                               style: ElevatedButton.styleFrom(
-                                      padding: EdgeInsets.all(10),
-                                      fixedSize: Size(130,50),
+                                      padding: const EdgeInsets.all(10),
+                                      fixedSize: const Size(130,50),
                                       backgroundColor: Colors.yellow,
-                                      animationDuration: Duration(seconds: 5)
+                                      animationDuration: const Duration(seconds: 5)
                               )
                           )
                 ),

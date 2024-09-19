@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Inputbox extends StatefulWidget {
-  Inputbox({super.key});
+  const Inputbox({super.key});
 
   @override
   State<Inputbox> createState() => _InputboxState();
@@ -10,7 +10,7 @@ class Inputbox extends StatefulWidget {
 
 class _InputboxState extends State<Inputbox> 
 {
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) 
@@ -26,21 +26,21 @@ class _InputboxState extends State<Inputbox>
           elevation: 0,
           centerTitle: true,
 
-          leading: Icon(
+          leading: const Icon(
 
             FontAwesomeIcons.youtube,
-            color: const Color.fromARGB(255, 255, 0, 0)
+            color: Color.fromARGB(255, 255, 0, 0)
 
           ),
           
-          title: Text(
+          title: const Text(
 
             "Youtube Login Page",
 
             style: TextStyle(
 
                 fontWeight: FontWeight.bold,
-                color: const Color.fromARGB(255, 0, 0, 0)
+                color: Color.fromARGB(255, 0, 0, 0)
 
             ),
           ),
@@ -55,7 +55,7 @@ class _InputboxState extends State<Inputbox>
 
           children: [
 
-            Text(
+            const Text(
               "Welcome back!",
               style: TextStyle(fontSize: 20),
             ),
@@ -71,9 +71,9 @@ class _InputboxState extends State<Inputbox>
                     
                       hintText: "Email",
 
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
 
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontFamily: 'Open Sans',
 
                       ),
@@ -98,9 +98,9 @@ class _InputboxState extends State<Inputbox>
 
                       hintText: "Password",
 
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
 
-                          color: const Color.fromARGB(255, 3, 0, 5),
+                          color: Color.fromARGB(255, 3, 0, 5),
                           fontFamily: 'Open Sans'),
 
                       alignLabelWithHint: true,
@@ -116,7 +116,7 @@ class _InputboxState extends State<Inputbox>
 
               onPressed: () {},
 
-              icon: Icon(FontAwesomeIcons.satelliteDish,
+              icon: const Icon(FontAwesomeIcons.satelliteDish,
                   color: Colors.amber, size: 25),
 
             ),

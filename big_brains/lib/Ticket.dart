@@ -13,17 +13,17 @@ class _TicketState extends State<Ticket> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text("Tickets",
+            title: const Text("Tickets",
                 style: TextStyle(
                     fontFamily: 'Times New Roman',
                     fontSize: 25,
                     fontWeight: FontWeight.bold)),
             centerTitle: true,
             leading: IconButton(
-                onPressed: () {}, icon: FaIcon(FontAwesomeIcons.addressBook)),
+                onPressed: () {}, icon: const FaIcon(FontAwesomeIcons.addressBook)),
             actions: [
               IconButton(
-                  onPressed: () {}, icon: FaIcon(FontAwesomeIcons.buffer))
+                  onPressed: () {}, icon: const FaIcon(FontAwesomeIcons.buffer))
             ]),
         body: BottomNavigationBar(
           unselectedItemColor: Colors.blueAccent,

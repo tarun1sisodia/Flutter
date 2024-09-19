@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class material extends StatelessWidget {
-const material({ Key? key }) : super(key: key);
+const material({ super.key });
 
   @override
   Widget build(BuildContext context){
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Center(
         child: 
